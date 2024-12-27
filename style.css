@@ -137,3 +137,48 @@ nav {
     height: 40px;
     border-radius: 50%;
 }
+/* main start */
+/* *************************************** */
+/* Change Your Habits Section start */
+#habbitsSection{
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    /* background-color: white; */
+}
+#habbitsSection .sectionTitle{
+    font-size: 48px;
+    font-weight: 900;
+}
+#habbitsSection .sectionDisc{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+#habbitsCards{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#habbitsCards .card{
+  width: 200px;
+    /* text-align: center; */
+}
+#habbitsCards .card .cardTitle{
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+#habbitsCards .card .cardDisc{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
+#habbitsCards .card img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
