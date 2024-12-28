@@ -14,7 +14,12 @@ body {
 }
 /* header start */
 header {
-  background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 1), rgb(17, 17, 17) 100%);
+  background: linear-gradient(
+    180deg,
+    rgb(17, 17, 17),
+    rgba(119, 119, 119, 1),
+    rgb(17, 17, 17) 100%
+  );
 }
 /* nav start */
 nav {
@@ -29,6 +34,7 @@ nav {
   color: rgb(230, 83, 60);
   font-weight: 800;
 }
+
 #navItems ul {
   display: flex;
   justify-content: center;
@@ -47,6 +53,9 @@ nav {
   background: rgb(230, 83, 60);
   padding: 10px 20px;
   font-weight: 600;
+}
+#menuIcon {
+  display: none;
 }
 /* banner */
 #banner {
@@ -68,7 +77,13 @@ nav {
   color: rgba(255, 255, 255, 0.5);
   margin-top: 20px;
   margin-bottom: 30px;
+  font-size: 16px;
 }
+#buttons {
+  display: flex;
+  gap: 20px;
+}
+
 .btn {
   border-radius: 42px;
   padding: 16px 30px;
@@ -80,105 +95,187 @@ nav {
 #btn1 {
   background: rgb(230, 83, 60);
   border: none;
-  margin-right: 20px;
 }
-#bannerRight{
-    position: relative;
+#bannerRight {
+  position: relative;
 }
-#text{
-    color: rgba(255, 255, 255, 0.65);
+#text {
+  color: rgba(255, 255, 255, 0.65);
 }
-#videosPop{
-    position: absolute;
-    top: 150px;
-    right: -80px;
-    padding: 15px 20px;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    width: 170px;
+#videosPop {
+  position: absolute;
+  top: 150px;
+  right: -80px;
+  padding: 15px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  width: 170px;
 }
-#videosPop #amount{
-    font-size: 40px;
-    font-weight: 900;
+#videosPop #amount {
+  font-size: 40px;
+  font-weight: 900;
 }
-#videosPop #text{
-    font-size: 13px;
-    font-weight: 400;
-    
+#videosPop #text {
+  font-size: 13px;
+  font-weight: 400;
 }
-#tutorialsPop{
-    position: absolute;
-    bottom: 63px;
-    left: -110px;
-    padding: 15px 20px;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    width: 200px;
+#tutorialsPop {
+  position: absolute;
+  bottom: 63px;
+  left: -110px;
+  padding: 15px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  width: 200px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
-#tutorialsPop #amount{
-    font-size: 24px;
-    font-weight: 900;
+#tutorialsPop #amount {
+  font-size: 24px;
+  font-weight: 900;
 }
-#tutorialsPop #text{
-    font-size: 16px;
-    font-weight: 400;
+#tutorialsPop #text {
+  font-size: 16px;
+  font-weight: 400;
 }
-#circle{
-    background: rgb(230, 83, 60);
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+#circle {
+  background: rgb(230, 83, 60);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 /* main start */
 /* *************************************** */
 /* Change Your Habits Section start */
-#habbitsSection{
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    /* background-color: white; */
+#habbitsSection {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  /* background-color: white; */
 }
-#habbitsSection .sectionTitle{
-    font-size: 48px;
-    font-weight: 900;
+#habbitsSection .sectionTitle {
+  font-size: 48px;
+  font-weight: 900;
 }
-#habbitsSection .sectionDisc{
-    font-size: 14px;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.5);
-    margin-top: 15px;
-    margin-bottom: 50px;
+#habbitsSection .sectionDisc {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 15px;
+  margin-bottom: 50px;
 }
-#habbitsCards{
+#habbitsCards {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-#habbitsCards .card{
+#habbitsCards .card {
   width: 200px;
-    /* text-align: center; */
+  /* text-align: center; */
 }
-#habbitsCards .card .cardTitle{
+#habbitsCards .card .cardTitle {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+#habbitsCards .card .cardDisc {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.5);
+}
+#habbitsCards .card img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 576px) {
+  .paddingLR {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  #navTitle {
+    /* font-size: 30px; */
+  }
+  #navItems {
+    display: none;
+  }
+  #menuIcon {
+    display: block;
+    font-size: 27px;
+  }
+
+  /* banner */
+  #banner {
+    flex-direction: column;
+    gap: 50px;
+  }
+  #blTitle {
+    font-size: 36px;
+    width: 70%;
+  }
+  #ita {
+    font-size: 36px;
+  }
+  #btn1 span {
+    display: none;
+  }
+  #videosPop {
+    top: 40px;
+    right: 10px;
+    width: 145px;
+  }
+  #videosPop #amount {
+    font-size: 30px;
+  }
+  #videosPop #text {
+    font-size: 10px;
+  }
+  #tutorialsPop {
+    top: 260px;
+    left: 10px;
+    width: 160px;
+    height: 80px;
+  }
+
+  #tutorialsPop #amount {
     font-size: 18px;
-    font-weight: 600;
-    margin-top: 20px;
-    margin-bottom: 8px;
-}
-#habbitsCards .card .cardDisc{
-    font-size: 14px;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.5);
-}
-#habbitsCards .card img{
+  }
+  #tutorialsPop #text {
+    font-size: 12px;
+  }
+  #circle {
+    width: 30px;
+    height: 30px;
+  }
+  /* main start */
+  /* *************************************** */
+  /* Change Your Habits Section start */
+
+  #habbitsSection {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  #habbitsSection .sectionTitle {
+    font-size: 32px;
+  }
+
+  #habbitsCards {
+    flex-direction: column;
+    gap: 20px;
+  }
+ 
+  #habbitsCards .card img {
     width: 180px;
     height: 180px;
     border-radius: 50%;
+  }
 }
